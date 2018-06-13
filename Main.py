@@ -122,6 +122,22 @@ def printMarcosHwyPoints():
 	print('Robinson\'s Metro East')
 	print('San Benildo School')
 
+def printRoxasBlvdPoints():
+	print()
+	print('Anda Circle')
+	print('Finance Road')
+	print('U.N. Avenue')
+	print('Pedro Gil')
+	print('Rajah Sulayman')
+	print('Quirino')
+	print('Pablo Ocampo')
+	print('Buendia')
+	print('Edsa Extension')
+	print('Baclaran')
+	print('Airport Road')
+	print('Coastal Road')
+
+
 def getMarcosHwyPoint(point):
 	if point == 1:
 		return 'SM City Marikina'
