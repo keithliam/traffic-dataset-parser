@@ -137,6 +137,32 @@ def printRoxasBlvdPoints():
 	print('Airport Road')
 	print('Coastal Road')
 
+def getRoxasBlvdPoint(point):
+	if point == 1:
+		return 'Anda Circle'
+	elif point == 2:
+		return 'Finance Road'
+	elif point == 3:
+		return 'U.N. Avenue'
+	elif point == 4:
+		return 'Pedro Gil'
+	elif point == 5:
+		return 'Rajah Sulayman'
+	elif point == 6:
+		return 'Quirino'
+	elif point == 7:
+		return 'Pablo Ocampo'
+	elif point == 8:
+		return 'Buendia'
+	elif point == 9:
+		return 'Edsa Extension'
+	elif point == 10:
+		return 'Baclaran'
+	elif point == 11:
+		return 'Airport Road'
+	else:
+		return 'Coastal Road'
+
 
 def getMarcosHwyPoint(point):
 	if point == 1:
