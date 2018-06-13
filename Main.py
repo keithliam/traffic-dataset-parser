@@ -137,6 +137,13 @@ def getC5Point():
 		road = int(input('Choose point: '))
 	return getC5Point(road)
 
+def getOrtigasPoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printOrtigasPoints()
+		road = int(input('Choose point: '))
+	return getOrtigasPoint(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
