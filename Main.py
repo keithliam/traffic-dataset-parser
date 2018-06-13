@@ -123,6 +123,13 @@ def getQuezonAvePoint():
 		road = int(input('Choose point: '))
 	return getQuezonAvePoint(road)
 
+def getEspanaPoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printEpanaPoints()
+		road = int(input('Choose point: '))
+	return getEpanaPoint(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
