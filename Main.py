@@ -116,6 +116,13 @@ def getCommonwealthPoint():
 		road = int(input('Choose point: '))
 	return getCommonwealthPoint(road)
 
+def getQuezonAvePoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printQuezonAvePoints()
+		road = int(input('Choose point: '))
+	return getQuezonAvePoint(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
