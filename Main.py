@@ -354,19 +354,19 @@ def getQuezonAvePoint(point):
 		return 'Roosevelt Avenue'
 
 def getEspanaPoint(point):
-	if point = 1:
+	if point == 1:
 		return 'Welcome Rotunda'
-	elif point = 2:
+	elif point == 2:
 		return 'Bluementritt'
-	elif point = 3:
+	elif point == 3:
 		return 'A. Maceda'
-	elif point = 4:
+	elif point == 4:
 		return 'Antipolo'
-	elif point = 5:
+	elif point == 5:
 		return 'Vicente Cruz'
-	elif point = 6:
+	elif point == 6:
 		return 'Gov. Forbes - Lacson'
-	elif point = 7:
+	elif point == 7:
 		return 'P.Noval'
 	else:
 		return 'Lerma'
