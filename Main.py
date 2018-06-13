@@ -206,7 +206,6 @@ def getMarcosHwyPoint(point):
 	else:
 		return 'San Benildo School'
 
-
 def getOrtigasPoint(point):
 	if point == 1:
 		return 'Santolan'
