@@ -271,7 +271,7 @@ def getC5Point(point):
 	else:
 		return 'X C5 On-ramp'
 
-def getCommonwealthPoint(point)
+def getCommonwealthPoint(point):
 	if point == 1:
 		return 'Batasan'
 	elif point == 2:
