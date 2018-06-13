@@ -10,7 +10,7 @@ class TrafficDataParser:
 		self.path = path
 
 	def parseDate(dateString):
-		dateTime = datetime(int(dateString[:4]), int(dateString[4:6]), int(dateString([6:])), 0, 0)
+		dateTime = datetime(int(dateString[:4]), int(dateString[4:6]), int(dateString[6:]), 0, 0)
 		return dateTime.strftime('%d/%m/%Y')
 
 	def parse(self):
