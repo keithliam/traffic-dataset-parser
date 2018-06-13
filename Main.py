@@ -146,6 +146,24 @@ def getQuezonAvePoint(point):
 	else:
 		return 'Roosevelt Avenue'
 
+def getEspanaPoint(point):
+	if point = 1:
+		return 'Welcome Rotunda'
+	elif point = 2:
+		return 'Bluementritt'
+	elif point = 3:
+		return 'A. Maceda'
+	elif point = 4:
+		return 'Antipolo'
+	elif point = 5:
+		return 'Vicente Cruz'
+	elif point = 6:
+		return 'Gov. Forbes - Lacson'
+	elif point = 7:
+		return 'P.Noval'
+	else:
+		return 'Lerma'
+
 def getEdsaPoint():
 	road = 0
 	while road < 1 or 13 < road:
