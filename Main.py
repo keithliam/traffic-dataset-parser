@@ -20,23 +20,23 @@ def printDirectionChoices():
 
 def getRoadName(road):
 	if road == 1:
-		return 'edsa'
+		return 'EDSA ' + getEdsaPoint()
 	elif road == 2:
-		return 'commonwealth'
+		return 'COMMONWEALTH ' + getCommonwealthPoint()
 	elif road == 3:
-		return 'quezon_avenue'
+		return 'QUEZON AVE. ' + getQuezonAvePoint()
 	elif road == 4:
-		return 'españa'
+		return 'ESPAA ' + getEspanaPoint()
 	elif road == 5:
-		return 'c5'
+		return 'C5 ' + getC5Point()
 	elif road == 6:
-		return 'ortigas'
+		return 'ORTIGAS ' + getOrtigasPoint()
 	elif road == 7:
-		return 'marcos_mighway'
+		return 'MARCOS HIGHWAY ' + getMarcosHwyPoint()
 	elif road == 8:
-		return 'oxas_blvd.'
+		return 'ROXAS BLVD. ' + getRoxasBlvdPoint()
 	else:
-		return 'slex'
+		return 'SLEX ' + getSlexPoint()
 
 def getRoad():
 	road = 0
