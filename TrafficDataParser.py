@@ -14,6 +14,10 @@ class TrafficDataParser:
 		dateTime = datetime(int(dateString[:4]), int(dateString[4:6]), int(dateString[6:]), 0, 0)
 		return dateTime.strftime('%d/%m/%Y')
 
+	def parseTime(self, timeString):
+		time = datetime.strptime(timeString, '%I:%M %p')
+		return time.strftime('%H:%M')
+
 	def parse(self):
 		csvString = '30 Minutes,Lane 1 Flow (Veh/30 Minutes),# Lane Points,% Observed'
 
@@ -23,4 +27,4 @@ class TrafficDataParser:
 			if isfile(self.path + fileFolder) and getsize(self.path + fileFolder) > 0:
 				fileData = json.load(open(self.path + fileFolder))
 				dataPoint = next(data for data in fileData if data['line'] == self.road)[self.direction]
-				csvString += '\n' + self.parseDate(fileFolder[15:23])
+				csvString += '\n' + self.parseDate(fileFolder[15:23]) + ' ' + self.parseTime(dataPoint['time_updated'])
