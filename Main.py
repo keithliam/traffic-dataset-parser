@@ -64,6 +64,17 @@ def printQuezonAvePoints():
 	print('[12] Roces Avenue')
 	print('[13] Roosevelt Avenue')
 
+def printEspanaPoints():
+	print()
+	print('[1] Welcome Rotunda')
+	print('[2] Bluementritt')
+	print('[3] A. Maceda')
+	print('[4] Antipolo')
+	print('[5] Vicente Cruz')
+	print('[6] Gov. Forbes - Lacson')
+	print('[7] P.Noval')
+	print('[8] Lerma')
+
 def getCommonwealthName(point)
 	if point == 1:
 		return 'Batasan'
