@@ -197,13 +197,13 @@ def getMarcosHwyPoint(point):
 		return 'LRT-2 Station'
 	elif point == 3:
 		return 'Dona Juana'
-	else:
+	elif point == 4:
 		return 'Amang Rodriguez'
-	elif point == 1:
+	elif point == 5:
 		return 'F. Mariano Ave'
-	elif point == 1:
+	elif point == 6:
 		return 'Robinson\'s Metro East'
-	elif point == 1:
+	else:
 		return 'San Benildo School'
 
 
