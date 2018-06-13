@@ -1,6 +1,7 @@
 from TrafficDataParser import TrafficDataParser
 
 def printRoadChoices():
+	print()
 	print('[1] EDSA')
 	print('[2] Commonwealth')
 	print('[3] Quezon Avenue')
@@ -12,6 +13,7 @@ def printRoadChoices():
 	print('[9] SLEX')
 
 def printDirectionChoices():
+	print()
 	print('[1] Northbound')
 	print('[2] Southbound')
 
