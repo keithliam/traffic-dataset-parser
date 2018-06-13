@@ -34,6 +34,20 @@ def printEdsaPoints():
 	print('[12] Monte De Piedad')
 	print('[13] Aurora Blvd')
 
+def printCommonwealthPoints():
+	print('[1] Batasan')
+	print('[2] St. Peter\'s Church')
+	print('[3] Ever Gotesco')
+	print('[4] Diliman Preparatory School')
+	print('[5] Zuzuarregi')
+	print('[6] General Malvar Hospital')
+	print('[7] Tandang Sora Eastside')
+	print('[8] Tandang Sora Westside')
+	print('[9] Central Avenue')
+	print('[10] Magsaysay Avenue')
+	print('[11] University Avenue')
+	print('[12] Philcoa')
+
 def getEdsaName(point):
 	if point == 1:
 		return 'Balintawak'
