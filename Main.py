@@ -50,19 +50,19 @@ def printCommonwealthPoints():
 
 def printQuezonAvePoints():
 	print()
-	print("[1] Elliptical Road")
-	print("[2] Agham Road")
-	print("[3] Bantayog Road")
-	print("[4] Edsa")
-	print("[5] SGT. Esguera")
-	print("[6] Scout Albano")
-	print("[7] Scout Borromeo")
-	print("[8] Scout Santiago")
-	print("[9] Timog")
-	print("[10] Scout Reyes")
-	print("[11] Scout Magbanua")
-	print("[12] Roces Avenue")
-	print("[13] Roosevelt Avenue")
+	print('[1] Elliptical Road')
+	print('[2] Agham Road')
+	print('[3] Bantayog Road')
+	print('[4] Edsa')
+	print('[5] SGT. Esguera')
+	print('[6] Scout Albano')
+	print('[7] Scout Borromeo')
+	print('[8] Scout Santiago')
+	print('[9] Timog')
+	print('[10] Scout Reyes')
+	print('[11] Scout Magbanua')
+	print('[12] Roces Avenue')
+	print('[13] Roosevelt Avenue')
 
 def getCommonwealthName(point)
 	if point == 1:
@@ -120,31 +120,31 @@ def getEdsaName(point):
 
 def getQuezonAvePoint(point):
 	if point == 1:
-		return "Elliptical Road"
+		return 'Elliptical Road'
 	elif point == 2:
-		return "Agham Road"
+		return 'Agham Road'
 	elif point == 3:
-		return "Bantayog Road"
+		return 'Bantayog Road'
 	elif point == 4:
-		return "Edsa"
+		return 'Edsa'
 	elif point == 5:
-		return "SGT. Esguera"
+		return 'SGT. Esguera'
 	elif point == 6:
-		return "Scout Albano"
+		return 'Scout Albano'
 	elif point == 7:
-		return "Scout Borromeo"
+		return 'Scout Borromeo'
 	elif point == 8:
-		return "Scout Santiago"
+		return 'Scout Santiago'
 	elif point == 9:
-		return "Timog"
+		return 'Timog'
 	elif point == 10:
-		return "Scout Reyes"
+		return 'Scout Reyes'
 	elif point == 11:
-		return "Scout Magbanua"
+		return 'Scout Magbanua'
 	elif point == 12:
-		return "Roces Avenue"
+		return 'Roces Avenue'
 	else:
-		return "Roosevelt Avenue"
+		return 'Roosevelt Avenue'
 
 def getEdsaPoint():
 	road = 0
