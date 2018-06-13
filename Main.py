@@ -94,6 +94,38 @@ def printC5Points():
 	print('[14] Ortigas Ave.')
 	print('[15] X C5 On-ramp')
 
+def getC5Point(point):
+	if point == 1:
+		return 'Tandang Sora'
+	elif point == 2:
+		return 'Capitol Hills'
+	elif point == 3:
+		return 'University of the Philippines'
+	elif point == 4:
+		return 'C.P. Garcia'
+	elif point == 5:
+		return 'Miriam College'
+	elif point == 6:
+		return 'Ateneo De Manila University'
+	elif point == 7:
+		return 'Xavierville'
+	elif point == 8:
+		return 'Aurora Boulevard'
+	elif point == 9:
+		return 'P. Tuazon'
+	elif point == 10:
+		return 'Bonny Serrano'
+	elif point == 11:
+		return 'Libis Flyover'
+	elif point == 12:
+		return 'Eastwood'
+	elif point == 13:
+		return 'Green Meadows'
+	elif point == 14:
+		return 'Ortigas Ave.'
+	else:
+		return 'X C5 On-ramp'
+
 def getCommonwealthName(point)
 	if point == 1:
 		return 'Batasan'
