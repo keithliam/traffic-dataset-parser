@@ -112,6 +112,38 @@ def printOrtigasPoints():
 	print('[14] Lanuza Ave')
 	print('[15] Greenmeadows Ave')
 
+def getOrtigasPoint(point):
+	if point == 1:
+		return 'Santolan'
+	elif point == 2:
+		return 'Madison'
+	elif point == 3:
+		return 'Roosevelt'
+	elif point == 4:
+		return 'Club Filipino'
+	elif point == 5:
+		return 'Wilson'
+	elif point == 6:
+		return 'Connecticut'
+	elif point == 7:
+		return 'La Salle Greenhills'
+	elif point == 8:
+		return 'POEA'
+	elif point == 9:
+		return 'EDSA Shrine'
+	elif point == 10:
+		return 'San Miguel Ave'
+	elif point == 11:
+		return 'as Ave.'
+	elif point == 12:
+		return 'Meralco Ave'
+	elif point == 13:
+		return 'Medical City'
+	elif point == 14:
+		return 'Lanuza Ave'
+	else:
+		return 'Greenmeadows Ave'
+
 
 def getC5Point(point):
 	if point == 1:
