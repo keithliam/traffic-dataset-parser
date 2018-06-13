@@ -34,6 +34,13 @@ def printEdsaPoints():
 	print('[12] Monte De Piedad')
 	print('[13] Aurora Blvd')
 
+def getEdsaPoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printEdsaPoints()
+		road = int(input('Choose point: '))
+	return getEdsaName(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
