@@ -35,6 +35,7 @@ def printEdsaPoints():
 	print('[13] Aurora Blvd')
 
 def printCommonwealthPoints():
+	print()
 	print('[1] Batasan')
 	print('[2] St. Peter\'s Church')
 	print('[3] Ever Gotesco')
