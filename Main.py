@@ -1,5 +1,6 @@
 from TrafficDataParser import TrafficDataParser
 
+
 def printRoadChoices():
 	print()
 	print('[1] EDSA')
@@ -58,4 +59,4 @@ def getDirection():
 	return getDirectionName(direction)
 
 parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
-csvString = parser.parse()
+parser.parse()
