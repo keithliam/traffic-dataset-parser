@@ -37,7 +37,7 @@ def getRoadName(road):
 
 def getRoad():
 	road = 0
-	while road < 1 and 9 < road:
+	while road < 1 or 9 < road:
 		printRoadChoices()
 		road = int(input('Choose road: '))
 	return getRoadName(road)
@@ -50,7 +50,7 @@ def getDirectionName(direction):
 
 def getDirection():
 	direction = 0
-	while direction < 1 and 2 < direction:
+	while direction < 1 or 2 < direction:
 		printDirectionChoices()
 		direction = int(input('Choose direction: '))
 	return getDirectionName(direction)
