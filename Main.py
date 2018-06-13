@@ -12,3 +12,17 @@ def printRoadChoices():
 def printDirectionChoices():
 	print('[1] Northbound')
 	print('[2] Southbound')
+
+def getRoad():
+	road = 0
+	while road < 1 and 9 < road:
+		printRoadChoices()
+		road = int(input('Choose road: '))
+	return road
+
+def getDirection():
+	direction = 0
+	while direction < 1 and 2 < direction:
+		printDirectionChoices()
+		direction = int(input('Choose direction: '))
+	return direction
