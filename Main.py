@@ -109,6 +109,13 @@ def getEdsaPoint():
 		road = int(input('Choose point: '))
 	return getEdsaName(road)
 
+def getCommonwealthPoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printCommonwealthPoints()
+		road = int(input('Choose point: '))
+	return getCommonwealthPoint(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
