@@ -144,6 +144,13 @@ def getOrtigasPoint():
 		road = int(input('Choose point: '))
 	return getOrtigasPoint(road)
 
+def getMarcosHwyPoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printMarcosHwyPoints()
+		road = int(input('Choose point: '))
+	return getMarcosHwyPoint(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
