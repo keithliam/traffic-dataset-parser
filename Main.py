@@ -112,6 +112,17 @@ def printOrtigasPoints():
 	print('[14] Lanuza Ave')
 	print('[15] Greenmeadows Ave')
 
+def printMarcosHwyPoints():
+	print()
+	print('SM City Marikina')
+	print('LRT-2 Station')
+	print('Dona Juana')
+	print('Amang Rodriguez')
+	print('F. Mariano Ave')
+	print('Robinson\'s Metro East')
+	print('San Benildo School')
+
+
 def getOrtigasPoint(point):
 	if point == 1:
 		return 'Santolan'
