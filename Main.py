@@ -2,7 +2,7 @@ from TrafficDataParser import TrafficDataParser
 
 def printRoadChoices():
 	print('[1] EDSA')
-	pirnt('[2] Commonwealth')
+	print('[2] Commonwealth')
 	print('[3] Quezon Avenue')
 	print('[4] España')
 	print('[5] C5')
