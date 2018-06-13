@@ -22,6 +22,5 @@ class TrafficDataParser:
 		for fileFolder in filesFolders:
 			if isfile(self.path + fileFolder) and getsize(self.path + fileFolder) > 0:
 				fileData = json.load(open(self.path + fileFolder))
-				dataPoint = next(data for data in fileData if data['line'] == self.road)
-				dataPoint = dataPoint[self.direction]
+				dataPoint = next(data for data in fileData if data['line'] == self.road)[self.direction]
 				csvString += '\n' + self.parseDate(fileFolder[15:23])
