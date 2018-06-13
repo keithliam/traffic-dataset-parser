@@ -1,3 +1,5 @@
+from TrafficDataParser import TrafficDataParser as tfp
+
 def printRoadChoices():
 	print('[1] EDSA')
 	pirnt('[2] Commonwealth')
@@ -52,3 +54,6 @@ def getDirection():
 		printDirectionChoices()
 		direction = int(input('Choose direction: '))
 	return getDirectionName(direction)
+
+
+tfp.parse(getRoad(), getDirection())
