@@ -48,6 +48,22 @@ def printCommonwealthPoints():
 	print('[11] University Avenue')
 	print('[12] Philcoa')
 
+def printQuezonAvePoints():
+	print()
+	print("[1] Elliptical Road")
+	print("[2] Agham Road")
+	print("[3] Bantayog Road")
+	print("[4] Edsa")
+	print("[5] SGT. Esguera")
+	print("[6] Scout Albano")
+	print("[7] Scout Borromeo")
+	print("[8] Scout Santiago")
+	print("[9] Timog")
+	print("[10] Scout Reyes")
+	print("[11] Scout Magbanua")
+	print("[12] Roces Avenue")
+	print("[13] Roosevelt Avenue")
+
 def getCommonwealthName(point)
 	if point == 1:
 		return 'Batasan'
