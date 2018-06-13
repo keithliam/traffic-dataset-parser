@@ -376,7 +376,7 @@ def getEdsaPoint():
 	while road < 1 or 13 < road:
 		printEdsaPoints()
 		road = int(input('Choose point: '))
-	return getEdsaName(road)
+	return getEdsaPoint(road)
 
 def getCommonwealthPoint():
 	road = 0
