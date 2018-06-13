@@ -94,6 +94,25 @@ def printC5Points():
 	print('[14] Ortigas Ave.')
 	print('[15] X C5 On-ramp')
 
+def printOrtigasPoints():
+	print()
+	print('[1] Santolan')
+	print('[2] Madison')
+	print('[3] Roosevelt')
+	print('[4] Club Filipino')
+	print('[5] Wilson')
+	print('[6] Connecticut')
+	print('[7] La Salle Greenhills')
+	print('[8] POEA')
+	print('[9] EDSA Shrine')
+	print('[10] San Miguel Ave')
+	print('[11] as Ave.')
+	print('[12] Meralco Ave')
+	print('[13] Medical City')
+	print('[14] Lanuza Ave')
+	print('[15] Greenmeadows Ave')
+
+
 def getC5Point(point):
 	if point == 1:
 		return 'Tandang Sora'
