@@ -58,4 +58,4 @@ def getDirection():
 	return getDirectionName(direction)
 
 parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
-parser.parse()
+csvString = parser.parse()
