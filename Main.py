@@ -76,6 +76,24 @@ def printEspanaPoints():
 	print('[7] P.Noval')
 	print('[8] Lerma')
 
+def printC5Points():
+	print()
+	print('[1] Tandang Sora')
+	print('[2] Capitol Hills')
+	print('[3] University of the Philippines')
+	print('[4] C.P. Garcia')
+	print('[5] Miriam College')
+	print('[6] Ateneo De Manila University')
+	print('[7] Xavierville')
+	print('[8] Aurora Boulevard')
+	print('[9] P. Tuazon')
+	print('[10] Bonny Serrano')
+	print('[11] Libis Flyover')
+	print('[12] Eastwood')
+	print('[13] Green Meadows')
+	print('[14] Ortigas Ave.')
+	print('[15] X C5 On-ramp')
+
 def getCommonwealthName(point)
 	if point == 1:
 		return 'Batasan'
