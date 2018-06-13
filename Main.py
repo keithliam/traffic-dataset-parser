@@ -102,6 +102,34 @@ def getEdsaName(point):
 	else:
 		return 'Aurora Blvd.'
 
+def getQuezonAvePoint(point):
+	if point == 1:
+		return "Elliptical Road"
+	elif point == 2:
+		return "Agham Road"
+	elif point == 3:
+		return "Bantayog Road"
+	elif point == 4:
+		return "Edsa"
+	elif point == 5:
+		return "SGT. Esguera"
+	elif point == 6:
+		return "Scout Albano"
+	elif point == 7:
+		return "Scout Borromeo"
+	elif point == 8:
+		return "Scout Santiago"
+	elif point == 9:
+		return "Timog"
+	elif point == 10:
+		return "Scout Reyes"
+	elif point == 11:
+		return "Scout Magbanua"
+	elif point == 12:
+		return "Roces Avenue"
+	else:
+		return "Roosevelt Avenue"
+
 def getEdsaPoint():
 	road = 0
 	while road < 1 or 13 < road:
