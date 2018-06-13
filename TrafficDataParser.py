@@ -1,7 +1,8 @@
 from datetime import datetime
 from time import strftime
-from os.path import isfile
+from os.path import isfile, getsize
 from os import listdir
+import json
 
 class TrafficDataParser:
 	def __init__(self, road, direction, path):
@@ -19,7 +20,8 @@ class TrafficDataParser:
 		filesFolders = listdir(self.path)
 
 		for fileFolder in filesFolders:
-			if isfile(self.path + fileFolder):
-
-				
-				csvString += '\n' + parseDate(fileFolder[15:23])
+			if isfile(self.path + fileFolder) and getsize(self.path + fileFolder) > 0:
+				fileData = json.load(open(self.path + fileFolder))
+				dataPoint = next(data for data in fileData if data['line'] == self.road)
+				dataPoint = dataPoint[self.direction]
+				csvString += '\n' + self.parseDate(fileFolder[15:23])
