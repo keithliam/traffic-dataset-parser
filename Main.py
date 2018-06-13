@@ -137,6 +137,17 @@ def printRoxasBlvdPoints():
 	print('Airport Road')
 	print('Coastal Road')
 
+def printSlexPoints():
+	print()
+	print('Magallanes')
+	print('Nichols')
+	print('C5 On-ramp')
+	print('Merville Exit')
+	print('Bicutan Exit')
+	print('Sucat Exit')
+	print('Alabang Exit')
+
+
 def getRoxasBlvdPoint(point):
 	if point == 1:
 		return 'Anda Circle'
