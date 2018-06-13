@@ -4,12 +4,12 @@ from os.path import isfile
 from os import listdir
 
 class TrafficDataParser:
-	def __init__(self, road, direction):
+	def __init__(self, road, direction, path):
 		self.road = road
 		self.direction = direction
 		self.path = path
 
-	def parseDate(dateString):
+	def parseDate(self, dateString):
 		dateTime = datetime(int(dateString[:4]), int(dateString[4:6]), int(dateString[6:]), 0, 0)
 		return dateTime.strftime('%d/%m/%Y')
 
