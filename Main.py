@@ -380,7 +380,7 @@ def getEdsaPoint():
 
 def getCommonwealthPoint():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 12 < road:
 		printCommonwealthPoints()
 		road = int(input('Choose point: '))
 	return getCommonwealthName(road)
@@ -394,42 +394,42 @@ def getQuezonAvePoint():
 
 def getEspanaPoint():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 8 < road:
 		printEspanaPoints()
 		road = int(input('Choose point: '))
 	return getEspanaName(road)
 
 def getC5Point():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 15 < road:
 		printC5Points()
 		road = int(input('Choose point: '))
 	return getC5Name(road)
 
 def getOrtigasPoint():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 15 < road:
 		printOrtigasPoints()
 		road = int(input('Choose point: '))
 	return getOrtigasName(road)
 
 def getMarcosHwyPoint():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 7 < road:
 		printMarcosHwyPoints()
 		road = int(input('Choose point: '))
 	return getMarcosHwyName(road)
 
 def getRoxasBlvdPoint():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 12 < road:
 		printRoxasBlvdPoints()
 		road = int(input('Choose point: '))
 	return getRoxasBlvdName(road)
 
 def getSlexPoint():
 	road = 0
-	while road < 1 or 13 < road:
+	while road < 1 or 7 < road:
 		printSlexPoints()
 		road = int(input('Choose point: '))
 	return getSlexName(road)
