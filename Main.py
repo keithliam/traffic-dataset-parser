@@ -147,6 +147,21 @@ def printSlexPoints():
 	print('Sucat Exit')
 	print('Alabang Exit')
 
+def getSlexPoint(point):
+	if point == 1:
+		return 'Magallanes'
+	elif point == 2:
+		return 'Nichols'
+	elif point == 3:
+		return 'C5 On-ramp'
+	elif point == 4:
+		return 'Merville Exit'
+	elif point == 5:
+		return 'Bicutan Exit'
+	elif point == 6:
+		return 'Sucat Exit'
+	else:
+		return 'Alabang Exit'
 
 def getRoxasBlvdPoint(point):
 	if point == 1:
