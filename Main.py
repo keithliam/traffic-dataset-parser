@@ -48,6 +48,32 @@ def printCommonwealthPoints():
 	print('[11] University Avenue')
 	print('[12] Philcoa')
 
+def getCommonwealthName(point)
+	if point == 1:
+		return 'Batasan'
+	elif point == 2:
+		return 'St. Peter\'s Church'
+	elif point == 3:
+		return 'Ever Gotesco'
+	elif point == 4:
+		return 'Diliman Preparatory School'
+	elif point == 5:
+		return 'Zuzuarregi'
+	elif point == 6:
+		return 'General Malvar Hospital'
+	elif point == 7:
+		return 'Tandang Sora Eastside'
+	elif point == 8:
+		return 'Tandang Sora Westside'
+	elif point == 9:
+		return 'Central Ave'
+	elif point == 10:
+		return 'Magsaysay Ave'
+	elif point == 11:
+		return 'University Ave'
+	else:
+		return 'Philcoa'
+
 def getEdsaName(point):
 	if point == 1:
 		return 'Balintawak'
