@@ -18,6 +18,22 @@ def printDirectionChoices():
 	print('[1] Northbound')
 	print('[2] Southbound')
 
+def printEdsaPoints():
+	print()
+	print('[1] Balintawak')
+	print('[2] Kaingin Road')
+	print('[3] Muñoz')
+	print('[4] Bansalangin')
+	print('[5] North Avenue')
+	print('[6] Trinoma')
+	print('[7] Quezon Avenue')
+	print('[8] NIA Road')
+	print('[9] Timog')
+	print('[10] Kamuning')
+	print('[11] New York - Nepa Q-Mart')
+	print('[12] Monte De Piedad')
+	print('[13] Aurora Blvd')
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
