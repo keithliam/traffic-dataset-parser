@@ -147,7 +147,7 @@ def printSlexPoints():
 	print('[6] Sucat Exit')
 	print('[7] Alabang Exit')
 
-def getSlexPoint(point):
+def getSlexName(point):
 	if point == 1:
 		return 'Magallanes'
 	elif point == 2:
@@ -163,7 +163,7 @@ def getSlexPoint(point):
 	else:
 		return 'Alabang Exit'
 
-def getRoxasBlvdPoint(point):
+def getRoxasBlvdName(point):
 	if point == 1:
 		return 'Anda Circle'
 	elif point == 2:
@@ -190,7 +190,7 @@ def getRoxasBlvdPoint(point):
 		return 'Coastal Road'
 
 
-def getMarcosHwyPoint(point):
+def getMarcosHwyName(point):
 	if point == 1:
 		return 'SM City Marikina'
 	elif point == 2:
@@ -206,7 +206,7 @@ def getMarcosHwyPoint(point):
 	else:
 		return 'San Benildo School'
 
-def getOrtigasPoint(point):
+def getOrtigasName(point):
 	if point == 1:
 		return 'Santolan'
 	elif point == 2:
@@ -239,7 +239,7 @@ def getOrtigasPoint(point):
 		return 'Greenmeadows Ave'
 
 
-def getC5Point(point):
+def getC5Name(point):
 	if point == 1:
 		return 'Tandang Sora'
 	elif point == 2:
@@ -271,7 +271,7 @@ def getC5Point(point):
 	else:
 		return 'X C5 On-ramp'
 
-def getCommonwealthPoint(point):
+def getCommonwealthName(point):
 	if point == 1:
 		return 'Batasan'
 	elif point == 2:
@@ -297,7 +297,7 @@ def getCommonwealthPoint(point):
 	else:
 		return 'Philcoa'
 
-def getEdsaPoint(point):
+def getEdsaName(point):
 	if point == 1:
 		return 'Balintawak'
 	elif point == 2:
@@ -325,7 +325,7 @@ def getEdsaPoint(point):
 	else:
 		return 'Aurora Blvd.'
 
-def getQuezonAvePoint(point):
+def getQuezonAveName(point):
 	if point == 1:
 		return 'Elliptical Road'
 	elif point == 2:
@@ -353,7 +353,7 @@ def getQuezonAvePoint(point):
 	else:
 		return 'Roosevelt Avenue'
 
-def getEspanaPoint(point):
+def getEspanaName(point):
 	if point == 1:
 		return 'Welcome Rotunda'
 	elif point == 2:
@@ -376,63 +376,63 @@ def getEdsaPoint():
 	while road < 1 or 13 < road:
 		printEdsaPoints()
 		road = int(input('Choose point: '))
-	return getEdsaPoint(road)
+	return getEdsaName(road)
 
 def getCommonwealthPoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printCommonwealthPoints()
 		road = int(input('Choose point: '))
-	return getCommonwealthPoint(road)
+	return getCommonwealthName(road)
 
 def getQuezonAvePoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printQuezonAvePoints()
 		road = int(input('Choose point: '))
-	return getQuezonAvePoint(road)
+	return getQuezonAveName(road)
 
 def getEspanaPoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printEspanaPoints()
 		road = int(input('Choose point: '))
-	return getEspanaPoint(road)
+	return getEspanaName(road)
 
 def getC5Point():
 	road = 0
 	while road < 1 or 13 < road:
 		printC5Points()
 		road = int(input('Choose point: '))
-	return getC5Point(road)
+	return getC5Name(road)
 
 def getOrtigasPoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printOrtigasPoints()
 		road = int(input('Choose point: '))
-	return getOrtigasPoint(road)
+	return getOrtigasName(road)
 
 def getMarcosHwyPoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printMarcosHwyPoints()
 		road = int(input('Choose point: '))
-	return getMarcosHwyPoint(road)
+	return getMarcosHwyName(road)
 
 def getRoxasBlvdPoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printRoxasBlvdPoints()
 		road = int(input('Choose point: '))
-	return getRoxasBlvdPoint(road)
+	return getRoxasBlvdName(road)
 
 def getSlexPoint():
 	road = 0
 	while road < 1 or 13 < road:
 		printSlexPoints()
 		road = int(input('Choose point: '))
-	return getSlexPoint(road)
+	return getSlexName(road)
 
 def getRoadName(road):
 	if road == 1:
