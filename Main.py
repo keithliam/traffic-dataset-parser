@@ -34,6 +34,34 @@ def printEdsaPoints():
 	print('[12] Monte De Piedad')
 	print('[13] Aurora Blvd')
 
+def getEdsaName(point):
+	if point == 1:
+		return 'Balintawak'
+	elif point == 2:
+		return 'Kaingin Road'
+	elif point == 3:
+		return 'Muoz'
+	elif point == 4:
+		return 'Bansalangin'
+	elif point == 5:
+		return 'North Ave.'
+	elif point == 6:
+		return 'Trinoma'
+	elif point == 7:
+		return 'Quezon Ave.'
+	elif point == 8:
+		return 'NIA Road'
+	elif point == 9:
+		return 'Timog'
+	elif point == 10:
+		return 'Kamuning'
+	elif point == 11:
+		return 'New York - Nepa Q-Mart'
+	elif point == 12:
+		return 'Monte De Piedad'
+	else:
+		return 'Aurora Blvd.'
+
 def getEdsaPoint():
 	road = 0
 	while road < 1 or 13 < road:
