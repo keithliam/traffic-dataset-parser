@@ -158,6 +158,13 @@ def getRoxasBlvdPoint():
 		road = int(input('Choose point: '))
 	return getRoxasBlvdPoint(road)
 
+def getSlexPoint():
+	road = 0
+	while road < 1 or 13 < road:
+		printSlexPoints()
+		road = int(input('Choose point: '))
+	return getSlexPoint(road)
+
 def getRoadName(road):
 	if road == 1:
 		return 'EDSA ' + getEdsaPoint()
