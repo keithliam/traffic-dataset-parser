@@ -395,9 +395,9 @@ def getQuezonAvePoint():
 def getEspanaPoint():
 	road = 0
 	while road < 1 or 13 < road:
-		printEpanaPoints()
+		printEspanaPoints()
 		road = int(input('Choose point: '))
-	return getEpanaPoint(road)
+	return getEspanaPoint(road)
 
 def getC5Point():
 	road = 0
