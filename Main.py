@@ -122,6 +122,22 @@ def printMarcosHwyPoints():
 	print('Robinson\'s Metro East')
 	print('San Benildo School')
 
+def getMarcosHwyPoint(point):
+	if point == 1:
+		return 'SM City Marikina'
+	elif point == 2:
+		return 'LRT-2 Station'
+	elif point == 3:
+		return 'Dona Juana'
+	else:
+		return 'Amang Rodriguez'
+	elif point == 1:
+		return 'F. Mariano Ave'
+	elif point == 1:
+		return 'Robinson\'s Metro East'
+	elif point == 1:
+		return 'San Benildo School'
+
 
 def getOrtigasPoint(point):
 	if point == 1:
