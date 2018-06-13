@@ -57,5 +57,5 @@ def getDirection():
 		direction = int(input('Choose direction: '))
 	return getDirectionName(direction)
 
-parser = TrafficDataParser(getRoad(), getDirection())
+parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
 parser.parse()
