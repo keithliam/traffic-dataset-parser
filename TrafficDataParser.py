@@ -33,7 +33,7 @@ class TrafficDataParser:
 		file.close()
 
 	def parse(self):
-		csvString = '30 Minutes,Lane 1 Flow (Veh/30 Minutes),# Lane Points,% Observed'
+		csvString = '5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed'
 
 		filesFolders = listdir(self.path)
 
