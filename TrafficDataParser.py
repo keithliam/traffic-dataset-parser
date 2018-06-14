@@ -40,6 +40,9 @@ class TrafficDataParser:
 		for fileFolder in filesFolders:
 			if isfile(self.path + fileFolder) and getsize(self.path + fileFolder) > 0:
 				fileData = json.load(open(self.path + fileFolder))
-				dataPoint = next(data for data in fileData if data['line'] == self.road)[self.direction]
-				csvString += '\n' + self.parseDate(fileFolder[15:23]) + ' ' + self.parseTime(dataPoint['time_updated']) + ',' + self.parseVolume(dataPoint['status']) + ',1,100'
+				dataPoint = next((data for data in fileData if data['line'] == self.road), None)
+				if dataPoint:
+					csvString += '\n' + self.parseDate(fileFolder[15:23])
+					csvString += ' ' + self.parseTime(dataPoint[self.direction]['time_updated'])
+					csvString += ',' + self.parseVolume(dataPoint[self.direction]['status']) + ',1,100'
 		self.outputToCSV(csvString)
