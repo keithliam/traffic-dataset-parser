@@ -1,4 +1,4 @@
 def outputAsCSV(filename, contents):
-	fp = open(filename)
+	fp = open(filename, 'w')
 	fp.write(contents)
 	fp.close()
