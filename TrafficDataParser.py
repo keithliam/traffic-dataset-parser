@@ -27,7 +27,7 @@ class TrafficDataParser:
 			return '75'
 
 	def parse(self):
-		csvString = '5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed'
+		csvList = ['5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed']
 
 		filesFolders = listdir(self.path)
 
@@ -36,7 +36,8 @@ class TrafficDataParser:
 				fileData = json.load(open(self.path + fileFolder))
 				dataPoint = next((data for data in fileData if data['line'] == self.road), None)
 				if dataPoint:
-					csvString += '\n' + self.parseDate(fileFolder[15:23])
+					csvString = self.parseDate(fileFolder[15:23])
 					csvString += ' ' + self.parseTime(dataPoint[self.direction]['time_updated'])
 					csvString += ',' + self.parseVolume(dataPoint[self.direction]['status']) + ',1,100'
-		self.outputToCSV(csvString)
+					csvList.append(csvString)
+		return csvList
