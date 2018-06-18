@@ -1,5 +1,5 @@
 from TrafficDataParser import TrafficDataParser
-import FileOutput
+from FileOutput import outputAsCSV
 
 def printRoadChoices():
 	print()
@@ -477,4 +477,6 @@ def getDirection():
 parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
 dataset = parser.parse()
 trainSet, testSet = parser.trainTestSplit(dataset, 0.2)
-filename = parser.getFilename()
+filename = parser.getFilename()	
+outputAsCSV(filename + '_train.csv', trainSet)
+outputAsCSV(filename + '_test.csv', testSet)
