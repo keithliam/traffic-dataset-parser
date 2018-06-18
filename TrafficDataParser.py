@@ -26,12 +26,6 @@ class TrafficDataParser:
 		else:
 			return '75'
 
-	def outputToCSV(self, csvString):
-		fileName = self.direction + '_' + self.road.lower().replace(' ', '-').replace('.', '') + '.csv'
-		file = open(fileName, 'w')
-		file.write(csvString)
-		file.close()
-
 	def parse(self):
 		csvString = '5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed'
 
