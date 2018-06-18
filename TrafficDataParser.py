@@ -44,7 +44,7 @@ class TrafficDataParser:
 					dataList.append(elementString)
 		return dataList
 
-	def trainTestSplit(dataset, trainPercent, testPercent):
+	def trainTestSplit(self, dataset, trainPercent, testPercent):
 		dataset = list(dataset)
 		shuffle(dataset)
 		trainLen = ceil(trainPercent * len(dataset))
