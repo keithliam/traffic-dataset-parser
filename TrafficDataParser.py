@@ -29,7 +29,7 @@ class TrafficDataParser:
 			return '75'
 
 	def parse(self):
-		dataList = ['5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed']
+		dataList = []
 
 		filesFolders = listdir(self.path)
 
