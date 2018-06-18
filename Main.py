@@ -475,4 +475,5 @@ def getDirection():
 	return getDirectionName(direction)
 
 parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
-parser.parse()
+dataset = parser.parse()
+trainSet, testSet = parser.trainTestSplit(dataset, 0.2)
