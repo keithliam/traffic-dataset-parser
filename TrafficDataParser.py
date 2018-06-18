@@ -2,6 +2,8 @@ from datetime import datetime
 from time import strftime
 from os.path import isfile, getsize
 from os import listdir
+from math import ceil
+from random import shuffle
 import json
 
 class TrafficDataParser:
@@ -41,3 +43,9 @@ class TrafficDataParser:
 					elementString += ',' + self.parseVolume(dataPoint[self.direction]['status']) + ',1,100'
 					dataList.append(elementString)
 		return dataList
+
+	def trainTestSplit(dataset, trainPercent, testPercent):
+		dataset = list(dataset)
+		shuffle(dataset)
+		trainLen = ceil(trainPercent * len(dataset))
+		return dataset[0:trainLen], dataset[trainLen:len(dataset)]
