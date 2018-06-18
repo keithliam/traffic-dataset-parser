@@ -44,6 +44,9 @@ class TrafficDataParser:
 					dataList.append(elementString)
 		return dataList
 
+	def getFilename(self):
+		return self.direction + '_' + self.road.lower().replace(' ', '-').replace('.', '')
+
 	def trainTestSplit(self, dataset, testPercent):
 		dataset = list(dataset)
 		shuffle(dataset)

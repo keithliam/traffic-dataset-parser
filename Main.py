@@ -1,5 +1,5 @@
 from TrafficDataParser import TrafficDataParser
-
+import FileOutput
 
 def printRoadChoices():
 	print()
@@ -477,3 +477,4 @@ def getDirection():
 parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
 dataset = parser.parse()
 trainSet, testSet = parser.trainTestSplit(dataset, 0.2)
+filename = parser.getFilename()
