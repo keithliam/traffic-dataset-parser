@@ -476,7 +476,7 @@ def getDirection():
 
 parser = TrafficDataParser(getRoad(), getDirection(), 'data/')
 dataset = parser.parse()
-trainSet, testSet = parser.trainTestSplit(dataset, 0.2)
+trainSet, testSet = parser.trainTestSplit(dataset, 0.5)
 filename = parser.getFilename()
 trainSet = ['5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed'] + trainSet
 testSet = ['5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed'] + testSet
